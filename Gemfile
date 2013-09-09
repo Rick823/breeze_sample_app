@@ -9,7 +9,8 @@ gem 'therubyracer'
 gem 'sqlite3'
 gem 'rake', '0.8.7'
 gem 'execjs', '1.2.4'
-
+gem 'autotest-standalone'
+gem 'autotest-growl'
 
 
 # Gems used only for assets and not required
@@ -21,12 +22,13 @@ group :assets do
 end
 
 group :development do
-	gem 'rspec-rails',	'2.0.1'
+	gem 'rspec-rails', '2.13.0'
 end
 
 group :test do
-	gem 'rspec', '2.0.1'
+	gem 'rspec', '2.13.0'
 	gem 'webrat', '0.7.1'
+	gem 'spork', '~> 1.0rc'
 end
 
 gem 'jquery-rails'
