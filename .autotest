@@ -1,1 +1,22 @@
 require 'autotest/growl'
+
+Autotest::Growl::clear_terminal = false
+
+Autotest::Growl::show_modified_files = true
+
+
+#Autotest.add_hook :initialize do |at|
+  #at.add_mapping(%r%^spec/.*_spec.rb$%, true) { |filename, _|
+    #filename
+  #}
+
+  #at.add_mapping(%r%^app/(models|controllers|helpers|lib)/.*_spec.rb$%, true) {
+    #filename
+  #}
+
+  #at.add_mapping(%r%^app/views/(.*)$%, true) {
+    #filename
+  #}
+#end
+
+ 
